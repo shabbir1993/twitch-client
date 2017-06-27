@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 let USER_ID = 0;
+const USER = "https://api.twitch.tv/kraken/users/"
+const STREAM = "https://api.twitch.tv/kraken/streams/"
+let USERNAME = "dallas";
+const CLIENT_ID = "?&client_id=rcfc26iizksue4oaw9o3zl5b61m5k9"
 
 class App extends Component {
   constructor(props){
@@ -12,17 +16,15 @@ class App extends Component {
   }
 
   fetchStreams(){
-      fetch("https://api.twitch.tv/kraken/users/dallas?client_id=rcfc26iizksue4oaw9o3zl5b61m5k9")
+      fetch(`${USER}${USERNAME}${CLIENT_ID}`)
     .then(response => response.json()).then(response => 
       {
         USER_ID = response._id;
         console.log(response);
-        //console.log(USER_ID);
-        fetch("https://api.twitch.tv/kraken/streams/"+USER_ID+"?&client_id=rcfc26iizksue4oaw9o3zl5b61m5k9")
+        fetch(`${STREAM}${USER_ID}${CLIENT_ID}`)
         .then(response => response.json)
         .then(response => 
               {
-                console.log(response);
                 response.stream ?
                   console.log("User Online"):console.log("User Offline")
               }
