@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 let USER_ID = 0;
-const USER = "https://api.twitch.tv/kraken/users/"
-const STREAM = "https://api.twitch.tv/kraken/streams/"
+const USER = "https://api.twitch.tv/kraken/users/";
+const STREAM = "https://api.twitch.tv/kraken/streams/";
 let USERNAME = "dallas";
-const CLIENT_ID = "?&client_id=rcfc26iizksue4oaw9o3zl5b61m5k9"
+const CLIENT_ID = "?&client_id=rcfc26iizksue4oaw9o3zl5b61m5k9";
 
 class App extends Component {
   constructor(props){
