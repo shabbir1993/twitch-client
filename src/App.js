@@ -17,7 +17,7 @@ class App extends Component {
 
   fetchStreams(){
       fetch(`${USER}${USERNAME}${CLIENT_ID}`)
-    .then(response => response.json()).then(response => 
+      .then(response => response.json()).then(response =>
       {
         USER_ID = response._id;
         console.log(response);
