@@ -4,7 +4,7 @@ import './App.css';
 
 const USER = "https://api.twitch.tv/kraken/channels/";
 const STREAM = "https://api.twitch.tv/kraken/streams/";
-let USERNAME = "B0aty";
+let USERNAME = "dota2ruhub";
 const CLIENT_ID = "?&client_id=rcfc26iizksue4oaw9o3zl5b61m5k9";
 let users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"]
 //let user_results; 
