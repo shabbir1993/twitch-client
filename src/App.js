@@ -64,7 +64,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
          
-          <h2>Twitch Streamers</h2>
+          <Header />
         </div>
           {
             this.state.result ?
@@ -91,5 +91,9 @@ class App extends Component {
     );
   }
 }
+
+const Header = () => 
+  <h1> The Twitch Streamers </h1>
+
 
 export default App;
