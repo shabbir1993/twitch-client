@@ -8,7 +8,13 @@ const STREAM = "https://api.twitch.tv/kraken/streams/";
 const CLIENT_ID = "?&client_id=rcfc26iizksue4oaw9o3zl5b61m5k9";
 let users = ["PGL","ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"]
 let bulkResults = [];
-
+/*
+  Pseudo Code for Streams and Channels
+  -> Fetch Streams
+  -> Stream Null ? fetch Channel innfo and extract info, status null, add to offline
+                  : extract channel info and status, status:status, add to online
+  -> Render the info extracted
+*/
 class App extends Component {
   constructor(props){
     super(props);
