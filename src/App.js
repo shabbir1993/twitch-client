@@ -11,6 +11,7 @@ let bulkResults = [];
 /*
   Pseudo Code for Streams and Channels
   -> Fetch Streams
+      - a fetch mthod with a fetch request to streams
   -> Stream Null ? fetch Channel innfo and extract info, status null, add to offline
                   : extract channel info and status, status:status, add to online
   -> Render the info extracted
@@ -83,7 +84,6 @@ class App extends Component {
                     <span>{
                       this.state.status ?
                       <span> {status.stream.status} </span>
-                      
                       :
                       <span> Offline </span>
                     }</span>
@@ -100,6 +100,5 @@ class App extends Component {
 
 const Header = () => 
   <h1> The Twitch Streamers </h1>
-
 
 export default App;
